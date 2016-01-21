@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://code.angularjs.org/1.4.8/angular.js" data-semver="1.4.8" data-require="angular.js@1.4.8"></script>
+  <script src="script.js"></script>
+</head>
+
+<body ng-app="Index">
+  <h1>Custom filter<br/>----------------</h1>
+  <p>Type your content into the text box to see the length of it</p>
+  <input ng-model="yourText" ng-init="yourText='Hello Plunker!'" />
+  <!---
+    In the markup below => length <= is a custom filter. To see how its created, read script.js
+    -->
+  <p><b>{{ yourText  | length }}</b></p>
+  <p>Simple use:</p>
+  <p>{{ "Hello World" | length }}</p>
+</body>
+
+</html>
